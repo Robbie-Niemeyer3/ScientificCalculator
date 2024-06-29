@@ -6,7 +6,11 @@ public class CoreFeature {
     double value1 = 0;
     double value2 = 0;
     String operator;
-    double answer;
+    double answer= 0;
+
+    public double getAnswer() {
+        return answer;
+    }
 
     public void setAnswer(int answer) {
         this.answer = answer;
@@ -38,6 +42,7 @@ public class CoreFeature {
 
     public CoreFeature() {
 
+
     }
 
     public double theAnswer() {
@@ -52,25 +57,33 @@ public class CoreFeature {
         }
 
         return answer;
-
-        public class Square {
-            Double square = Math.pow(storeMemory, 2);
-        }
-
-        public class Sqrt {
-            Double sqrt = Math.sqrt(storeMemory);
-        }
-
-        public class Inverse {
-            public static void(String[] args) {
-
-                int x = (int)   Math.pow(xy)
-                System.out.println(xy);
-            }
-        }
-
-
     }
+
+
+    public double Sqrt(double input){
+        Double sqrt = Math.sqrt(input);
+        return input;
+    }
+
+}
+
+
+
+
+//        public class Square {
+//            Double square = Math.pow(storeMemory, 2);
+//        }
+//
+
+//
+//        public class Inverse {
+//            public static void(String[] args) {
+//
+//                int x = (int)   Math.pow(xy)
+//                System.out.println(xy);
+//            }
+//        }
+//}
 
 
 

@@ -1,8 +1,11 @@
 package com.zipcodewilmington.scientific_calculator;
 import com.sun.tools.javac.Main;
+import com.zipcodewilmington.scientificcalculator.CoreFeature;
 import com.zipcodewilmington.scientificcalculator.MainApplication;
 import com.zipcodewilmington.scientificcalculator.ScientificFeatures;
+import org.junit.Assert;
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -39,5 +42,12 @@ public class TestMainApplication {
         ScientificFeatures calculator = new ScientificFeatures();
         assertEquals(-3.3805, (ScientificFeatures.tan(scientificTest)));
     }
+    @Test // tan() Test
+    public void testSquareRoot(){
+       CoreFeature calculator = new CoreFeature();
+       double results = calculator.Sqrt(30.0);
+         assertEquals(5.4, results, 0.001);
+    }
+
 
 }
