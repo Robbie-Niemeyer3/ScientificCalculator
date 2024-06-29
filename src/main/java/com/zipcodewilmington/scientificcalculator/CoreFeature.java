@@ -47,22 +47,47 @@ public class CoreFeature {
 
     public double theAnswer() {
         if (operator.equals("*")) {
-            answer = value1 * value2;
+            multiplication(value1,  value2);
         } else if (operator.equals("/")) {
-            answer = value1 / value2;
+           division(value1, value2);
         } else if (operator.equals("+")) {
-            answer = value1 + value2;
+           addition(value1, value2);
         } else if (operator.equals("-")) {
-            answer = value1 - value2;
+            subtraction(value1, value2);
+        }else if(operator.equals("^")){
+            Square(answer);
         }
 
         return answer;
     }
 
+    public double multiplication(double input1, double input2){
+        answer = input1 * input2;
+        return answer;
+    }
+    public double division(double input1, double input2){
+        answer = input1 / input2;
+        return answer;
+    }
 
-    public double Sqrt(double input){
-        Double sqrt = Math.sqrt(input);
-        return input;
+    public double addition(double input1, double input2){
+        answer = input1 + input2;
+        return answer;
+    }
+
+    public double subtraction (double input1, double input2){
+        answer = input1 - input2;
+        return answer;
+    }
+
+
+
+
+    public double Square(double input){
+        //Double sqrt = Math.sqrt(input);
+       // Math.pow(input, 2);
+        answer = Math.pow(input, 2);
+        return answer;
     }
 
 }
