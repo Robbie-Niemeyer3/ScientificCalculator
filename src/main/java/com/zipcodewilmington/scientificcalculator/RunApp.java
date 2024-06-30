@@ -44,10 +44,10 @@ public class RunApp {
             } else if(option == 3){
                 option = Console.getIntegerInput("1. Inverse your current number " + answer + ".\n2. Invert your current number " + answer + ".");
                 if(option == 1){
-                    answer = basicExponentFunctions.inverse();
+                    answer = basicExponentFunctions.inverse(answer);
                     System.out.println(answer);
                 } else if (option == 2){
-                    answer = basicExponentFunctions.invert();
+                    answer = basicExponentFunctions.invert(answer);
                     System.out.println(answer);
                 }
             }
