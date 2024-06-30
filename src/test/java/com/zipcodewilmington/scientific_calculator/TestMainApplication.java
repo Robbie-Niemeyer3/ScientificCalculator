@@ -128,12 +128,12 @@ public class TestMainApplication {
         assertEquals(0.301, results, 0.001);
     }
 
-//    @Test
-//    public void testingInverseLog(){
-//        ScientificFeatures scientificFeatures = new ScientificFeatures();
-//        double results = scientificFeatures.inverseLog(2, 2);
-//        assertEquals();
-//    }
+    @Test
+    public void testingInverseLog(){
+        ScientificFeatures scientificFeatures = new ScientificFeatures();
+        double results = scientificFeatures.inverseLog(2);
+        assertEquals(100, results, 0.001);
+    }
 
 
 }

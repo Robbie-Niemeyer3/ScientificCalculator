@@ -206,8 +206,8 @@ public class ScientificFeatures {
     }
 
     // Inverse Log Method
-    public double inverseLog(double input1, double input2){
-        answer = Math.pow(input1, input2);
+    public double inverseLog(double input1){
+        answer = Math.pow(10, input1);
         return answer;
     }
 
