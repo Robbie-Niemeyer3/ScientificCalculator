@@ -1,15 +1,22 @@
 package com.zipcodewilmington.scientificcalculator;
 
+import java.util.Scanner;
+
 public class RunApp {
     public RunApp() {
     }
 
+
     public void runningApp(){
         double answer = 0;
+        boolean exitApp = false;
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println();
         //  System.out.println("1. Basic Functions\n2. Scientific Functions");
         //answer = Console.getIntegerInput("fPlease enter a number");
+
+        while(!exitApp){
         int option = Console.getIntegerInput("Please choose one of the following:\n1. Basic Functions\n2. Scientific Functions");
 
         if(option == 1) {
@@ -47,19 +54,58 @@ public class RunApp {
         }else if(option ==2) {
             //ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
             ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
-          double input = Console.getIntegerInput("1. Trig Functions .\n2. Log Functions .\n3. Factorial");
-          answer = Console.getIntegerInput("Please enter a number: ");
-          if(input == 1){
-              input = Console.getIntegerInput("1. Sine .\n2. Cosine .\n3. Tangent .\n4. Inverse Sine .\n5. Cosine sine .\n6. Tangent Sine");
-              if(input == 1){
-                  answer = scientificFeaturesFunctions.sin();
-                  System.out.println(answer);
-              }else if(input ==2){
-                 // answer = scientificFeaturesFunctions.cos();
-                  System.out.println(answer);
-              }
-          }
+            double input = Console.getIntegerInput("1. Trig Functions .\n2. Log Functions .\n3. Factorial");
+            if (input == 1) {
+                input = Console.getIntegerInput("1. Sine .\n2. Cosine .\n3. Tangent .\n4. Inverse Sine .\n5. Inverse Cosine .\n6. Inverse Tangent");
+                answer = Console.getIntegerInput("Please enter a number: ");
+                if (input == 1) {
+                    answer = scientificFeaturesFunctions.sin(answer);
+                    System.out.println(answer);
+                } else if (input == 2) {
+                    answer = scientificFeaturesFunctions.cos(answer);
+                    System.out.println(answer);
+                } else if (input == 3) {
+                    answer = scientificFeaturesFunctions.tan(answer);
+                    System.out.println(answer);
+                } else if (input == 4) {
+                    answer = scientificFeaturesFunctions.invSine(answer);
+                    System.out.println(answer);
+                } else if (input == 5) {
+                    answer = scientificFeaturesFunctions.invCosine(answer);
+                    System.out.println(answer);
+                } else if (input == 6) {
+                    answer = scientificFeaturesFunctions.invTangent(answer);
+                    System.out.println(answer);
+                }
+            } else if (input == 2) {
+
+                input = Console.getIntegerInput("1. Log .\n2. Inverse Log .\n3. Natural Log .\n4. Inverse Natural Log ");
+                answer = Console.getIntegerInput("Please enter a number: ");
+                if (input == 1) {
+                    answer = scientificFeaturesFunctions.log(answer);
+                    System.out.println(answer);
+                } else if (input == 2) {
+                    answer = scientificFeaturesFunctions.inverseLog(answer);
+                    System.out.println(answer);
+                    //
+                } else if (input == 3) {
+                    answer = scientificFeaturesFunctions.naturalLog(answer);
+                    System.out.println(answer);
+                } else if (input == 4) {
+                    scientificFeaturesFunctions.inverseNaturalLog(answer);
+                    System.out.println(answer);
+                } else {
+                    // fix this.
+                    System.out.println("please enter a valid number");
+                }
+            }else if(input == 3){
+                answer = Console.getIntegerInput("Please enter a number: ");
+                answer = scientificFeaturesFunctions.factorial(answer);
+                System.out.println(answer);
+            }
         }
+        }
+        scanner.close();
     }
 }
 
