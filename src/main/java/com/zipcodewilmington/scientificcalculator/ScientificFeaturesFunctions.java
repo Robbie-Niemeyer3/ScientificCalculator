@@ -6,29 +6,26 @@ public class ScientificFeaturesFunctions {
     String scientific;
     double answer;
     String operator;
-    //CoreFeature application = new CoreFeature();
-
 
     public ScientificFeaturesFunctions(double value1, double value2) {
         this.value1 = value1;
         this.value2 = value2;
     }
-
-    public ScientificFeaturesFunctions(){
-
-    };
     public ScientificFeaturesFunctions(double value1){
         this.value1 = value1;
     }
+    public ScientificFeaturesFunctions(){
+    }
+
 
     // Setters
     public void setOperator(String operator) {
         this.operator = operator;
     }
 
-
 //    ===============================================================
-    // First Attempt at switchDisplayMode()
+//    First Attempt at switchDisplayMode()
+//    ===============================================================
 //    //Display to Binary
 //    public double doubleToBinary(double i) {
 //        Long.toBinaryString(Double.doubleToRawLongBits(value1));
@@ -47,6 +44,7 @@ public class ScientificFeaturesFunctions {
 //        return i;
 //    }
 //    ===============================================================
+//    Second Re-attempt at switchDisplayMode()
 //    ===============================================================
 //    // Second Re-attempt at switchDisplayMode()
 //
@@ -65,8 +63,8 @@ public class ScientificFeaturesFunctions {
 //        return input;
 //    }
 //    ===============================================================
+//    Third Re-attempt at switchDisplayMode()
 //    ===============================================================
-      // Third Re-attempt at switchDisplayMode()
 //    public String input(){
 //        if(operator.equals("1")){
 //
@@ -81,10 +79,8 @@ public class ScientificFeaturesFunctions {
 //        }
 //        return ;
 //    }
-
-//    public
-
 //    ===============================================================
+//    First Attempt at Trig Functions
 //    ===============================================================
 //    //tan() method
 //    public static double tan(double a) {
@@ -136,69 +132,67 @@ public class ScientificFeaturesFunctions {
 //        }
 //        return inRadian;
 //    }
-
-
-
-    // Re-attempt at TrigFunctions
-
-//    // Tangent Method
-//    public double tan(){
-//        answer = Math.tan(answer);
-//        return answer;
-//    }
+//     ===============================================================
+//     Re-attempt at TrigFunctions
 //
-//    // Cosine Method
-//    public double cos(){
-//        answer = Math.cos(answer);
-//        return answer;
-//    }
+    // Tangent Method
+    public double tan(double input){
+        answer = Math.tan(input);
+        return answer;
+    }
+
+    // Cosine Method
+    public double cos(double input){
+        answer = Math.cos(input);
+        return answer;
+    }
 
     // Sine Method
-    public double sin(){
-        answer = Math.cos(answer);
+    public double sin(double input){
+        answer = Math.sin(input);
         return answer;
     }
 
-    // Cotangent Method
-    public double cot(){
-        answer = Math.atan(answer);
+    // Inverse Tangent Method
+    public double invTangent(double input){
+        answer = (1/Math.tan(input));
         return answer;
     }
 
-    // Secant Method
-    public double sec(){
-        answer = Math.asin(answer);
+    // Inverse Sine
+    public double invSine(double input){
+        answer = (1/Math.sin(input));
         return answer;
     }
 
-    // Cosecant Method
-    public double csc(){
-        answer = Math.acos(answer);
+    // Inverse Cosine
+    public double invCosine(double input){
+        answer = (1/Math.cos(input));
         return answer;
     }
-
+    //     ===============================================================
     // Converts number to radians
-    public double radians(){
-        answer = Math.toRadians(answer);
+    public double radians(double input){
+        answer = Math.toRadians(input);
         return answer;
     }
 
     // Converts display to degree
-    public double degree(){
-        answer = Math.toDegrees(answer);
+    public double degree(double input){
+        answer = Math.toDegrees(input);
         return answer;
     }
 
     // Switch between unit modes
-    public double switchUnitsMode(){
+    public double switchUnitsMode(double input){
         if (operator.equalsIgnoreCase("r")){
-            radians();
+            radians(input);
         } else if (operator.equalsIgnoreCase("d")) {
-            degree();
+            degree(input);
         }
         return answer;
     }
-
+    //     ===============================================================
     // Log Method
     public double log(double input){
         answer = Math.log10(input);
@@ -218,5 +212,18 @@ public class ScientificFeaturesFunctions {
     }
 
     // Inverse Natural Log Method
-//    public double
+    public double inverseNaturalLog(double input) {
+        answer = Math.exp(input);
+        return answer;
+    }
+    //     ===============================================================
+    // Factorial
+    public double factorial(double input1) {
+        int i;
+        answer = 1;
+        for (i = 1; i <= input1; i ++){
+            answer *= i;
+        }
+        return answer;
+    }
 }

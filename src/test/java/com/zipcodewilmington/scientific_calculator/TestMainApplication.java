@@ -11,7 +11,6 @@ public class TestMainApplication {
 
     //Scientific Tests
 
-    double scientificTest = 5;
 
 //    @Test
 //    public void displayBinary(){
@@ -114,6 +113,55 @@ public class TestMainApplication {
     // TESTING SCIENTIFIC METHODS :
 
     @Test
+    public void testingTangent(){
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.tan(2);
+        assertEquals(-2.185, results, 0.001);
+    }
+
+    @Test
+    public void testingCosine(){
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.cos(2);
+        assertEquals(-0.416, results, 0.001);
+    }
+
+    @Test
+    public void testingSine(){
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.sin(2);
+        assertEquals(0.909, results, 0.001);
+    }
+
+    @Test
+    public void testingInverseTangent(){
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.invTangent(2.0);
+        assertEquals(-0.458, results, 0.001);
+    }
+
+    @Test
+    public void testingInverseSin(){
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.invSine(2);
+        assertEquals(1.099, results, 0.001);
+    }
+
+    @Test
+    public void testingInverse(){
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.invCosine(2);
+        assertEquals(-2.403, results, 0.001);
+    }
+
+//    @Test
+//    public void testingdisplayRadians(){
+//        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+//        double results = scientificFeaturesFunctions.radians(2);
+//        assertEquals(114.592, results, 0.001);
+//    }
+
+    @Test
     public void testingLog(){
         ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
         double results = scientificFeaturesFunctions.log(2);
@@ -122,10 +170,29 @@ public class TestMainApplication {
 
     @Test
     public void testingInverseLog(){
-        ScientificFeatures scientificFeatures = new ScientificFeatures();
+        ScientificFeaturesFunctions scientificFeatures = new ScientificFeaturesFunctions();
         double results = scientificFeatures.inverseLog(2);
         assertEquals(100, results, 0.001);
     }
 
+    @Test
+    public void testingNaturalLog(){
+        ScientificFeaturesFunctions scientificFeatures = new ScientificFeaturesFunctions();
+        double results = scientificFeatures.naturalLog(3);
+        assertEquals(1.099, results, 0.001);
+    }
 
+    @Test
+    public void testingInverseNaturalLog() {
+        ScientificFeaturesFunctions scientificFeatures = new ScientificFeaturesFunctions();
+        double results = scientificFeatures.inverseNaturalLog((5));
+        assertEquals(148.413, results, 0.001);
+    }
+
+    @Test
+    public void testingFactorial() {
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.factorial(4);
+        assertEquals(24, results, 0.001);
+    }
 }
