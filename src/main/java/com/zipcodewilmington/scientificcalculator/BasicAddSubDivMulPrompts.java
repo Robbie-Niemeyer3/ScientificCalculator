@@ -15,6 +15,7 @@ public class BasicAddSubDivMulPrompts {
         this.value = value;
     }
 
+
     public void runAppSimpleCalc(){
 
         boolean exitApp = false;
