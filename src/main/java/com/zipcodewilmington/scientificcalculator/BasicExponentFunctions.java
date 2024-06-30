@@ -26,13 +26,13 @@ public class BasicExponentFunctions {
 
     }
 
-    public double inverse(){
-        answer= 1/answer;
+    public double inverse(double input){
+        answer= 1/input;
         return answer;
     }
 
-    public double invert(){
-        answer = (answer * -1);
+    public double invert(double input){
+        answer = (input * -1);
         return answer;
     }
 

@@ -132,9 +132,9 @@ public class ScientificFeaturesFunctions {
 //        }
 //        return inRadian;
 //    }
-//     ===============================================================
-//     Re-attempt at TrigFunctions
-//
+//  ===============================================================
+//  Second Attempt at Trig Functions
+
     // Tangent Method
     public double tan(double input){
         answer = Math.tan(input);
@@ -170,8 +170,8 @@ public class ScientificFeaturesFunctions {
         answer = (1/Math.cos(input));
         return answer;
     }
-    //     ===============================================================
-    // Converts display to radians
+// ===============================================================
+// Converts display to radians
     public double radians(double input){
         answer = Math.toRadians(input);
         return answer;
@@ -192,8 +192,9 @@ public class ScientificFeaturesFunctions {
         }
         return answer;
     }
-    //     ===============================================================
-    // Log Method
+
+// ===============================================================
+// Log Method
     public double log(double input){
         answer = Math.log10(input);
         return answer;
