@@ -12,12 +12,14 @@ public class RunApp {
 
         System.out.println();
         //  System.out.println("1. Basic Functions\n2. Scientific Functions");
+        //answer = Console.getIntegerInput("fPlease enter a number");
         int option = Console.getIntegerInput("Please choose one of the following:\n1. Basic Functions\n2. Scientific Functions");
 
         if(option == 1) {
 //            System.out.println("Please choose one of the following: ");
 //            System.out.println("1. [+] [-] [*] [/]\n2. Exponents \n3. Inverse/Invert");
             option = Console.getIntegerInput("1. [+] [-] [*] [/]\n2. Exponents \n3. Inverse/Invert");
+            BasicFunctionsExponent basicFunctionsExponent= new BasicFunctionsExponent(answer);
             if(option == 1) {
                 BasicFunctionsAddSubDivMul basicFunctionsAddSubDivMul = new BasicFunctionsAddSubDivMul();
                 basicFunctionsAddSubDivMul.runAppSimpleCalc();
@@ -25,15 +27,26 @@ public class RunApp {
                 System.out.println("Your last value was: " + answer);
             }else if(option == 2){
                 option = Console.getIntegerInput("1.The Square ("+answer+"^2) of your current number\n2. The Square root (√"+answer+") of your current number\n3. The exponentiation ("+answer+"^y) of your current number");
-                BasicFunctionsExponent basicFunctionsExponent= new BasicFunctionsExponent(answer);
+                ;
                 if(option == 1){
-                    basicFunctionsExponent.square();
-                    answer = basicFunctionsExponent.getAnswer();
+                    answer = basicFunctionsExponent.square();
                     System.out.println(answer);
-
+                }else if(option == 2){
+                    answer = basicFunctionsExponent.squareRoot();
+                    System.out.println(answer);
+                }else if(option == 3){
+                   double input = Console.getDoubleInput("Please enter the power you would like to raise " +answer+ " too");
+                   answer = basicFunctionsExponent.exponentiation(input);
+                   System.out.println(answer);
                 }
 
             }
+            // we stopped here
+//            else if(option == 3){
+//
+//                answer = basicFunctionsExponent.inverse();
+//                System.out.println(answer);
+//            }
 
 
         }else if(option ==2) {
