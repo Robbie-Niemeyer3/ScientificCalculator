@@ -57,7 +57,6 @@ public class RunApp {
 
 
 //  Double d = Console.getDoubleInput("Enter a double.");
-
 //  Console.println("The user input %s as a string ", s);
 //  Console.println("The user input %s as a integer ", i);
 //  Console.println("The user input %s as a d", d);
