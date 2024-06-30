@@ -16,6 +16,16 @@ public class BasicFunctionsExponent {
         return answer;
     }
 
+    public double exponentiation(double input){
+        answer = Math.pow(answer, input);
+        return answer;
+    }
+
+    public double inverse(){
+        answer= 1/answer;
+        return answer;
+    }
+
 
     public double getAnswer() {
         return answer;
