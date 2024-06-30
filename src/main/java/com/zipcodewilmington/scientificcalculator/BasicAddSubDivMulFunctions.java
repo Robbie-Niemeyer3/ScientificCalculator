@@ -1,13 +1,11 @@
 package com.zipcodewilmington.scientificcalculator;
 
-import java.util.Scanner;
-
-public class CoreFeature {
+public class BasicAddSubDivMulFunctions {
     double value1 = 0;
     double value2 = 0;
     String operator;
     double answer= 0;
-    public CoreFeature() {
+    public BasicAddSubDivMulFunctions() {
     }
 
     public double getAnswer() {

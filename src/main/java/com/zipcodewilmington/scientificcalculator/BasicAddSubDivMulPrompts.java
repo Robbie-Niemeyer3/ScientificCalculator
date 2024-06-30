@@ -2,9 +2,9 @@ package com.zipcodewilmington.scientificcalculator;
 
 import java.util.Scanner;
 
-public class BasicFunctionsAddSubDivMul {
+public class BasicAddSubDivMulPrompts {
     double value =0;
-    public BasicFunctionsAddSubDivMul() {
+    public BasicAddSubDivMulPrompts() {
     }
 
     public double getValue() {
@@ -21,7 +21,7 @@ public class BasicFunctionsAddSubDivMul {
         Scanner scanner = new Scanner(System.in);
 
         while(exitApp == false){
-            CoreFeature application = new CoreFeature();
+            BasicAddSubDivMulFunctions application = new BasicAddSubDivMulFunctions();
 
             Integer i = Console.getIntegerInput("Enter your first integer");
             application.setValue1(i);
