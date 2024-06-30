@@ -47,18 +47,11 @@ public class RunApp {
 //                answer = basicFunctionsExponent.inverse();
 //                System.out.println(answer);
 //            }
-
-
         }else if(option ==2) {
             ScientificFeatures scientificFeatures = new ScientificFeatures();
             System.out.println("you're in the scientific class");
         }
-
-
     }
-
-
-
 }
 
 

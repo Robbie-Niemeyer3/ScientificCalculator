@@ -8,18 +8,9 @@ import java.util.Scanner;
 public class MainApplication {
 
     public static void main(String[] args) {
-
-RunApp runApp = new RunApp();
-runApp.runningApp();
-
+    RunApp runApp = new RunApp();
+    runApp.runningApp();
     }
-
-
-
-
-
-
-
 }
 
 
