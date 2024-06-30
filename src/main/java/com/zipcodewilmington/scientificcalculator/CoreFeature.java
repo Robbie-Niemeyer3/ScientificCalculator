@@ -6,7 +6,13 @@ public class CoreFeature {
     double value1 = 0;
     double value2 = 0;
     String operator;
-    double answer;
+    double answer= 0;
+    public CoreFeature() {
+    }
+
+    public double getAnswer() {
+        return answer;
+    }
 
     public void setAnswer(int answer) {
         this.answer = answer;
@@ -36,44 +42,56 @@ public class CoreFeature {
         this.operator = operator;
     }
 
-    public CoreFeature() {
 
-    }
 
     public double theAnswer() {
         if (operator.equals("*")) {
-            answer = value1 * value2;
+            multiplication(value1,  value2);
         } else if (operator.equals("/")) {
-            answer = value1 / value2;
+           division(value1, value2);
         } else if (operator.equals("+")) {
-            answer = value1 + value2;
+           addition(value1, value2);
         } else if (operator.equals("-")) {
-            answer = value1 - value2;
+            subtraction(value1, value2);
         }
-
         return answer;
-
-        public class Square {
-            Double square = Math.pow(storeMemory, 2);
-        }
-
-        public class Sqrt {
-            Double sqrt = Math.sqrt(storeMemory);
-        }
-
-        public class Inverse {
-            public static void(String[] args) {
-
-                int x = (int)   Math.pow(xy)
-                System.out.println(xy);
-            }
-        }
-
-
     }
 
+    public double multiplication(double input1, double input2){
+        answer = input1 * input2;
+        return answer;
+    }
+    public double division(double input1, double input2){
+        answer = input1 / input2;
+        return answer;
+    }
+
+    public double addition(double input1, double input2){
+        answer = input1 + input2;
+        return answer;
+    }
+
+    public double subtraction (double input1, double input2){
+        answer = input1 - input2;
+        return answer;
+    }
+}
 
 
+
+
+//        public class Square {
+//            Double square = Math.pow(storeMemory, 2);
+//        }
+
+//        public class Inverse {
+//            public static void(String[] args) {
+//
+//                int x = (int)   Math.pow(xy)
+//                System.out.println(xy);
+//            }
+//        }
+//    }
 
         //Add, subtract, multiply, and divide the value on the display by a given number
         //Calculate the square (x2) and square root (√x) of the number on the display *
@@ -82,7 +100,6 @@ public class CoreFeature {
         //Invert the sign of the number on the display (switch between positive and negative)
         //Update the display to Err if an error occurs (eg: Division by zero) *
         //Errors must be cleared before any other operation can take place *
-
 
 //User input will be a string, and we loop through the string.
 // If string equal “1” we set num1 to the int 1.
