@@ -4,7 +4,16 @@ import java.util.Scanner;
 
 public class BasicAddSubDivMulPrompts {
     double value =0;
+    boolean exitBasicFunApp = false;
     public BasicAddSubDivMulPrompts() {
+    }
+
+    public boolean getExitBasicFunApp() {
+        return exitBasicFunApp;
+    }
+
+    public void setExitBasicFunApp(boolean exitBasicFunApp) {
+        this.exitBasicFunApp = exitBasicFunApp;
     }
 
     public double getValue() {
@@ -34,6 +43,7 @@ public class BasicAddSubDivMulPrompts {
             String cont = Console.getStringInput("Would you like to continue?");
             if(cont.equalsIgnoreCase("no")){
                 setValue(application.getAnswer());
+                setExitBasicFunApp(true);
                 exitApp = true;
             }else {
                 while(cont.equalsIgnoreCase("yes")){
