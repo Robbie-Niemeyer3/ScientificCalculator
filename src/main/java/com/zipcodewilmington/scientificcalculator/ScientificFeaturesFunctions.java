@@ -171,7 +171,7 @@ public class ScientificFeaturesFunctions {
         return answer;
     }
     //     ===============================================================
-    // Converts number to radians
+    // Converts display to radians
     public double radians(double input){
         answer = Math.toRadians(input);
         return answer;

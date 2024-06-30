@@ -54,6 +54,7 @@ public class RunApp {
         }else if(option ==2) {
             //ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
             ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+
             double input = Console.getIntegerInput("1. Trig Functions .\n2. Log Functions .\n3. Factorial");
             if (input == 1) {
                 input = Console.getIntegerInput("1. Sine .\n2. Cosine .\n3. Tangent .\n4. Inverse Sine .\n5. Inverse Cosine .\n6. Inverse Tangent");
@@ -104,6 +105,7 @@ public class RunApp {
                 System.out.println(answer);
             }
         }
+
         }
         scanner.close();
     }
