@@ -6,7 +6,20 @@ public class ScientificFeatures {
     String scientific;
     double answer;
     String operator;
-    CoreFeature application = new CoreFeature();
+    //CoreFeature application = new CoreFeature();
+
+
+    public ScientificFeatures(double value1, double value2) {
+        this.value1 = value1;
+        this.value2 = value2;
+    }
+
+    public ScientificFeatures(){
+
+    };
+    public ScientificFeatures(double value1){
+        this.value1 = value1;
+    }
 
     // Setters
     public void setOperator(String operator) {
@@ -15,6 +28,7 @@ public class ScientificFeatures {
 
 
 //    ===============================================================
+    // First Attempt at switchDisplayMode()
 //    //Display to Binary
 //    public double doubleToBinary(double i) {
 //        Long.toBinaryString(Double.doubleToRawLongBits(value1));
@@ -53,22 +67,22 @@ public class ScientificFeatures {
 //    ===============================================================
 //    ===============================================================
       // Third Re-attempt at switchDisplayMode()
-    public String input(){
-        if(operator.equals("1")){
+//    public String input(){
+//        if(operator.equals("1")){
+//
+//        } else if(operator.equals("2")){
+//
+//        } else if(operator.equals("3")){
+//
+//        } else if(operator.equals("4")){
+//
+//        } else {
+//            return "Invalid Option";
+//        }
+//        return ;
+//    }
 
-        } else if(operator.equals("2")){
-
-        } else if(operator.equals("3")){
-
-        } else if(operator.equals("4")){
-
-        } else {
-            return "Invalid Option";
-        }
-        return ;
-    }
-
-    public
+//    public
 
 //    ===============================================================
 //    ===============================================================
@@ -106,7 +120,6 @@ public class ScientificFeatures {
 //        return inRadian;
 //    }
 //
-//
 //    //cos() method
 //    public static double cos(double a) {
 //        double inRadian = Math.cos(a); // Converts input to radians
@@ -128,17 +141,17 @@ public class ScientificFeatures {
 
     // Re-attempt at TrigFunctions
 
-    // Tangent Method
-    public double tan(){
-        answer = Math.tan(answer);
-        return answer;
-    }
-
-    // Cosine Method
-    public double cos(){
-        answer = Math.cos(answer);
-        return answer;
-    }
+//    // Tangent Method
+//    public double tan(){
+//        answer = Math.tan(answer);
+//        return answer;
+//    }
+//
+//    // Cosine Method
+//    public double cos(){
+//        answer = Math.cos(answer);
+//        return answer;
+//    }
 
     // Sine Method
     public double sin(){
@@ -193,8 +206,8 @@ public class ScientificFeatures {
     }
 
     // Inverse Log Method
-    public double inverseLog(double input){
-        answer = Math.pow(10, input);
+    public double inverseLog(double input1, double input2){
+        answer = Math.pow(input1, input2);
         return answer;
     }
 

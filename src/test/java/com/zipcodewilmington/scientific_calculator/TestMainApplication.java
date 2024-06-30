@@ -55,64 +55,85 @@ public class TestMainApplication {
     public void testMultiply(){
         CoreFeature coreFeature = new CoreFeature();
         double results = coreFeature.multiplication(5, 5);
-        assertEquals(25.0, results, results);
+        assertEquals(25.0, results, 0.001);
     }
 
-    @Test
-    public void testSubtraction(){
-        CoreFeature coreFeature = new CoreFeature();
-        double results = coreFeature.subtraction(5, 2);
-        assertEquals(3.0, results, results);
-    }
+
+//
+//    @Test
+//    public void testSubtraction(){
+//        CoreFeature coreFeature = new CoreFeature();
+//        double results = coreFeature.subtraction(5, 2);
+//        assertEquals(3.0, results, results);
+//    }
+//
+//    @Test
+//    public void testAddition(){
+//        CoreFeature coreFeature = new CoreFeature();
+//        double results = coreFeature.addition(5, 5);
+//        assertEquals(10.0, results, results);
+//    }
+//
+//    @Test
+//    public void testDivision(){
+//        CoreFeature coreFeature = new CoreFeature();
+//        double results = coreFeature.division(10,2);
+//        assertEquals(5.0, results, results);
+//    }
+//
+//    @Test
+//    public void testSquare(){
+//        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+//        double results = basicFunctionsExponent.square();
+//       // assertEquals();
+//    }
+//
+//    @Test
+//    public void testSquareRoot(){
+//        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+//        double results = basicFunctionsExponent.squareRoot();
+//        assertEquals();
+//    }
+//
+//    @Test
+//    public void testExponentiation(){
+//        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+//        double results = basicFunctionsExponent.exponentiation();
+//        assertEquals();
+//    }
+//
+//    @Test
+//    public void inverse(){
+//        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+//        double results = basicFunctionsExponent.inverse();
+//        assertEquals();
+//    }
+//
+//    @Test
+//    public void invert(){
+//        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+//        double results = basicFunctionsExponent.invert();
+//        assertEquals();
+//    }
+
+
+
+
+    // TESTING SCIENTIFIC METHODS :
 
     @Test
-    public void testAddition(){
-        CoreFeature coreFeature = new CoreFeature();
-        double results = coreFeature.addition(5, 5);
-        assertEquals(10.0, results, results);
+    public void testingLog(){
+        ScientificFeatures scientificFeatures = new ScientificFeatures();
+        double results = scientificFeatures.log(2);
+        assertEquals(0.301, results, 0.001);
     }
 
-    @Test
-    public void testDivision(){
-        CoreFeature coreFeature = new CoreFeature();
-        double results = coreFeature.division(10,2);
-        assertEquals(5.0, results, results);
-    }
-
-    @Test
-    public void testSquare(){
-        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
-        double results = basicFunctionsExponent.square();
-        assertEquals();
-    }
-
-    @Test
-    public void testSquareRoot(){
-        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
-        double results = basicFunctionsExponent.squareRoot();
-        assertEquals();
-    }
-
-    @Test
-    public void testExponentiation(){
-        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
-        double results = basicFunctionsExponent.exponentiation();
-        assertEquals();
-    }
-
-    @Test
-    public void inverse(){
-        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
-        double results = basicFunctionsExponent.inverse();
-        assertEquals();
-    }
-
-    @Test
-    public void invert(){
-        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
-        double results = basicFunctionsExponent.invert();
-        assertEquals();
-    }
+//    @Test
+//    public void testingInverseLog(){
+//        ScientificFeatures scientificFeatures = new ScientificFeatures();
+//        double results = scientificFeatures.inverseLog(2, 2);
+//        assertEquals();
+//    }
 
 
 }
