@@ -12,3 +12,4 @@ public class MainApplication {
     runApp.runningApp();
     }
 }
+// updated main application testing
