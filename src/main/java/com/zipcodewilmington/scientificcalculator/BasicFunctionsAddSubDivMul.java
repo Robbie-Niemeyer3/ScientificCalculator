@@ -20,11 +20,8 @@ public class BasicFunctionsAddSubDivMul {
         boolean exitApp = false;
         Scanner scanner = new Scanner(System.in);
 
-
         while(exitApp == false){
             CoreFeature application = new CoreFeature();
-//            System.out.println(application.getValue1());
-
 
             Integer i = Console.getIntegerInput("Enter your first integer");
             application.setValue1(i);
@@ -51,8 +48,6 @@ public class BasicFunctionsAddSubDivMul {
                 }
                 break;
             }
-
-
         }
         scanner.close();
     }

@@ -56,7 +56,6 @@ public class CoreFeature {
         }else if(operator.equals("^")){
             Square(answer);
         }
-
         return answer;
     }
 
@@ -79,12 +78,9 @@ public class CoreFeature {
         return answer;
     }
 
-
-
-
     public double Square(double input){
         //Double sqrt = Math.sqrt(input);
-       // Math.pow(input, 2);
+        // Math.pow(input, 2);
         answer = Math.pow(input, 2);
         return answer;
     }

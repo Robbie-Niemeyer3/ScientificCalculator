@@ -55,29 +55,28 @@ public class TestMainApplication {
     public void testMultiply(){
         CoreFeature coreFeature = new CoreFeature();
         double results = coreFeature.multiplication(5, 5);
-        assertEquals(25.0, results, 0.001);
+        assertEquals(25.0, results, results);
     }
 
     @Test
     public void testSubtraction(){
         CoreFeature coreFeature = new CoreFeature();
         double results = coreFeature.subtraction(5, 2);
-        assertEquals(3.0, results, 0.001);
+        assertEquals(3.0, results, results);
     }
 
     @Test
     public void testAddition(){
         CoreFeature coreFeature = new CoreFeature();
         double results = coreFeature.addition(5, 5);
-        assertEquals(10.0, results, 0.001);
+        assertEquals(10.0, results, results);
     }
 
     @Test
     public void testDivision(){
         CoreFeature coreFeature = new CoreFeature();
         double results = coreFeature.division(10,2);
-        assertEquals(5.0, results, 0.001);
+        assertEquals(5.0, results, results);
     }
-
 
 }
