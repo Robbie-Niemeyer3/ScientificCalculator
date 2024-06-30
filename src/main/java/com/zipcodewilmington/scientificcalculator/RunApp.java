@@ -55,7 +55,7 @@ public class RunApp {
                   answer = scientificFeaturesFunctions.sin();
                   System.out.println(answer);
               }else if(input ==2){
-                 // answer = scientificFeaturesFunctions.cos();
+                  answer = scientificFeaturesFunctions.cos();
                   System.out.println(answer);
               }
           }
