@@ -1,8 +1,5 @@
 package com.zipcodewilmington.scientificcalculator;
 
-import java.beans.beancontext.BeanContextServiceProviderBeanInfo;
-import java.util.Scanner;
-
 public class RunApp {
     public RunApp() {
     }
@@ -17,37 +14,37 @@ public class RunApp {
 
         if(option == 1) {
             option = Console.getIntegerInput("1. [+] [-] [*] [/]\n2. Exponents \n3. Inverse/Invert");
-            BasicFunctionsExponent basicFunctionsExponent= new BasicFunctionsExponent(answer);
+            BasicExponentFunctions basicExponentFunctions = new BasicExponentFunctions(answer);
             if(option == 1) {
-                BasicFunctionsAddSubDivMul basicFunctionsAddSubDivMul = new BasicFunctionsAddSubDivMul();
-                basicFunctionsAddSubDivMul.runAppSimpleCalc();
-                answer = basicFunctionsAddSubDivMul.getValue();
+                BasicAddSubDivMulPrompts basicAddSubDivMulPrompts = new BasicAddSubDivMulPrompts();
+                basicAddSubDivMulPrompts.runAppSimpleCalc();
+                answer = basicAddSubDivMulPrompts.getValue();
                 System.out.println("Your last value was: " + answer);
             } else if(option == 2) {
                 option = Console.getIntegerInput("1.The Square ("+answer+"^2) of your current number\n2. The Square root (√"+answer+") of your current number\n3. The exponentiation ("+answer+"^y) of your current number");
                 if(option == 1){
-                    answer = basicFunctionsExponent.square();
+                    answer = basicExponentFunctions.square();
                     System.out.println(answer);
                 } else if(option == 2){
-                    answer = basicFunctionsExponent.squareRoot();
+                    answer = basicExponentFunctions.squareRoot();
                     System.out.println(answer);
                 } else if(option == 3){
                    double input = Console.getDoubleInput("Please enter the power you would like to raise " +answer+ " too");
-                   answer = basicFunctionsExponent.exponentiation(input);
+                   answer = basicExponentFunctions.exponentiation(input);
                    System.out.println(answer);
                 }
             } else if(option == 3){
                 option = Console.getIntegerInput("1. Inverse your current number " + answer + ".\n2. Invert your current number " + answer + ".");
                 if(option == 1){
-                    answer = basicFunctionsExponent.inverse();
+                    answer = basicExponentFunctions.inverse();
                     System.out.println(answer);
                 } else if (option == 2){
-                    answer = basicFunctionsExponent.invert();
+                    answer = basicExponentFunctions.invert();
                     System.out.println(answer);
                 }
             }
         }else if(option ==2) {
-            ScientificFeatures scientificFeatures = new ScientificFeatures();
+            ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
             System.out.println("You're in the scientific class");
         }
     }

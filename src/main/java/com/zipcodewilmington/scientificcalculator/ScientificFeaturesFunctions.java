@@ -1,6 +1,6 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class ScientificFeatures {
+public class ScientificFeaturesFunctions {
     double value1;
     double value2;
     String scientific;
@@ -9,15 +9,15 @@ public class ScientificFeatures {
     //CoreFeature application = new CoreFeature();
 
 
-    public ScientificFeatures(double value1, double value2) {
+    public ScientificFeaturesFunctions(double value1, double value2) {
         this.value1 = value1;
         this.value2 = value2;
     }
 
-    public ScientificFeatures(){
+    public ScientificFeaturesFunctions(){
 
     };
-    public ScientificFeatures(double value1){
+    public ScientificFeaturesFunctions(double value1){
         this.value1 = value1;
     }
 
