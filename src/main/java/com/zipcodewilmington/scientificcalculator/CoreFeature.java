@@ -7,6 +7,8 @@ public class CoreFeature {
     double value2 = 0;
     String operator;
     double answer= 0;
+    public CoreFeature() {
+    }
 
     public double getAnswer() {
         return answer;
@@ -40,10 +42,7 @@ public class CoreFeature {
         this.operator = operator;
     }
 
-    public CoreFeature() {
 
-
-    }
 
     public double theAnswer() {
         if (operator.equals("*")) {
