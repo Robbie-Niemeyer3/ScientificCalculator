@@ -79,4 +79,40 @@ public class TestMainApplication {
         assertEquals(5.0, results, results);
     }
 
+    @Test
+    public void testSquare(){
+        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+        double results = basicFunctionsExponent.square();
+        assertEquals();
+    }
+
+    @Test
+    public void testSquareRoot(){
+        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+        double results = basicFunctionsExponent.squareRoot();
+        assertEquals();
+    }
+
+    @Test
+    public void testExponentiation(){
+        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+        double results = basicFunctionsExponent.exponentiation();
+        assertEquals();
+    }
+
+    @Test
+    public void inverse(){
+        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+        double results = basicFunctionsExponent.inverse();
+        assertEquals();
+    }
+
+    @Test
+    public void invert(){
+        BasicFunctionsExponent basicFunctionsExponent = new BasicFunctionsExponent();
+        double results = basicFunctionsExponent.invert();
+        assertEquals();
+    }
+
+
 }

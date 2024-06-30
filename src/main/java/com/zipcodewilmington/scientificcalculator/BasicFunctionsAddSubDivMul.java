@@ -29,7 +29,7 @@ public class BasicFunctionsAddSubDivMul {
             application.setOperator(s);
             Integer t = Console.getIntegerInput("Enter your second integer");
             application.setValue2(t);
-            System.out.println("your answer is: " + application.theAnswer());
+            System.out.println("Your answer is: " + application.theAnswer());
             String cont = Console.getStringInput("Would you like to continue?");
             if(cont.equalsIgnoreCase("no")){
                 setValue(application.getAnswer());

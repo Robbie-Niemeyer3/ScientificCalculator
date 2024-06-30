@@ -53,8 +53,6 @@ public class CoreFeature {
            addition(value1, value2);
         } else if (operator.equals("-")) {
             subtraction(value1, value2);
-        }else if(operator.equals("^")){
-            Square(answer);
         }
         return answer;
     }
@@ -77,14 +75,6 @@ public class CoreFeature {
         answer = input1 - input2;
         return answer;
     }
-
-    public double Square(double input){
-        //Double sqrt = Math.sqrt(input);
-        // Math.pow(input, 2);
-        answer = Math.pow(input, 2);
-        return answer;
-    }
-
 }
 
 
@@ -93,9 +83,7 @@ public class CoreFeature {
 //        public class Square {
 //            Double square = Math.pow(storeMemory, 2);
 //        }
-//
 
-//
 //        public class Inverse {
 //            public static void(String[] args) {
 //
@@ -103,10 +91,7 @@ public class CoreFeature {
 //                System.out.println(xy);
 //            }
 //        }
-//}
-
-
-
+//    }
 
         //Add, subtract, multiply, and divide the value on the display by a given number
         //Calculate the square (x2) and square root (√x) of the number on the display *
@@ -115,7 +100,6 @@ public class CoreFeature {
         //Invert the sign of the number on the display (switch between positive and negative)
         //Update the display to Err if an error occurs (eg: Division by zero) *
         //Errors must be cleared before any other operation can take place *
-
 
 //User input will be a string, and we loop through the string.
 // If string equal “1” we set num1 to the int 1.

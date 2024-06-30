@@ -26,6 +26,10 @@ public class BasicFunctionsExponent {
         return answer;
     }
 
+    public double invert(){
+        answer = (answer * -1);
+        return answer;
+    }
 
     public double getAnswer() {
         return answer;
