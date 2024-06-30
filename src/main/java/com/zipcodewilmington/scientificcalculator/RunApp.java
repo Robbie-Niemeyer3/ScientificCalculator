@@ -45,8 +45,20 @@ public class RunApp {
                 }
             }
         }else if(option ==2) {
+            //ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
             ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
-            System.out.println("You're in the scientific class");
+          double input = Console.getIntegerInput("1. Trig Functions .\n2. Log Functions .\n3. Factorial");
+          answer = Console.getIntegerInput("Please enter a number: ");
+          if(input == 1){
+              input = Console.getIntegerInput("1. Sine .\n2. Cosine .\n3. Tangent .\n4. Inverse Sine .\n5. Cosine sine .\n6. Tangent Sine");
+              if(input == 1){
+                  answer = scientificFeaturesFunctions.sin();
+                  System.out.println(answer);
+              }else if(input ==2){
+                 // answer = scientificFeaturesFunctions.cos();
+                  System.out.println(answer);
+              }
+          }
         }
     }
 }
