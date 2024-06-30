@@ -1,36 +1,77 @@
 package com.zipcodewilmington.scientificcalculator;
 
-import java.util.Scanner;
-
 public class ScientificFeatures {
     double value1;
     double value2;
     String scientific;
     double answer;
+    String operator;
     CoreFeature application = new CoreFeature();
 
-
-    //Display to Binary
-    public double doubleToBinary(double i) {
-
-        Long.toBinaryString(Double.doubleToRawLongBits(value1));
-        return i;
+    // Setters
+    public void setOperator(String operator) {
+        this.operator = operator;
     }
 
-    //Display to Octal
-    public double doubleToOctal(double i) {
 
-        Long.toOctalString(Double.doubleToRawLongBits(value1));
-        return i;
+//    ===============================================================
+//    //Display to Binary
+//    public double doubleToBinary(double i) {
+//        Long.toBinaryString(Double.doubleToRawLongBits(value1));
+//        return i;
+//    }
+//
+//    //Display to Octal
+//    public double doubleToOctal(double i) {
+//        Long.toOctalString(Double.doubleToRawLongBits(value1));
+//        return i;
+//    }
+//
+//    //Display to HexaDecimal
+//    public double doubleToHexaDecimal(double i) {
+//        Long.toHexString(Double.doubleToRawLongBits(value1));
+//        return i;
+//    }
+//    ===============================================================
+//    ===============================================================
+//    // Second Re-attempt at switchDisplayMode()
+//
+//    public static String switchDisplayMode(String input){
+//        if(input.equalsIgnoreCase("binary")){
+//            answer = Integer.toBinaryString();
+//        } else if (input.equalsIgnoreCase("octal")){
+//            answer = Integer.toOctalString();
+//        } else if (input.equalsIgnoreCase("hexadecimal")) {
+//            answer = Integer.toHexString();
+//        } else if (input.equalsIgnoreCase("decimal")){
+//            answer = Integer.toString();
+//        } else {
+//            input = "Invalid option.";
+//        }
+//        return input;
+//    }
+//    ===============================================================
+//    ===============================================================
+      // Third Re-attempt at switchDisplayMode()
+    public String input(){
+        if(operator.equals("1")){
+
+        } else if(operator.equals("2")){
+
+        } else if(operator.equals("3")){
+
+        } else if(operator.equals("4")){
+
+        } else {
+            return "Invalid Option";
+        }
+        return ;
     }
 
-    //Display to HexaDecimal
-    public double doubleToHexaDecimal(double i) {
+    public
 
-        Long.toHexString(Double.doubleToRawLongBits(value1));
-        return i;
-    }
-
+//    ===============================================================
+//    ===============================================================
 //    //tan() method
 //    public static double tan(double a) {
 //        double inRadian = Math.tan(a); // Converts input to radians
@@ -123,5 +164,46 @@ public class ScientificFeatures {
         return answer;
     }
 
+    // Converts number to radians
+    public double radians(){
+        answer = Math.toRadians(answer);
+        return answer;
+    }
 
+    // Converts display to degree
+    public double degree(){
+        answer = Math.toDegrees(answer);
+        return answer;
+    }
+
+    // Switch between unit modes
+    public double switchUnitsMode(){
+        if (operator.equalsIgnoreCase("r")){
+            radians();
+        } else if (operator.equalsIgnoreCase("d")) {
+            degree();
+        }
+        return answer;
+    }
+
+    // Log Method
+    public double log(double input){
+        answer = Math.log10(input);
+        return answer;
+    }
+
+    // Inverse Log Method
+    public double inverseLog(double input){
+        answer = Math.pow(10, input);
+        return answer;
+    }
+
+    // Natural log Method
+    public double naturalLog(double input){
+        answer = Math.log(input);
+        return answer;
+    }
+
+    // Inverse Natural Log Method
+//    public double
 }
