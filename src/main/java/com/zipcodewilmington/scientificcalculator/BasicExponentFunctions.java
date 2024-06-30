@@ -1,10 +1,10 @@
 package com.zipcodewilmington.scientificcalculator;
 
-public class BasicFunctionsExponent {
+public class BasicExponentFunctions {
 
    // double value = 0;
     double answer;
-    public BasicFunctionsExponent(double answer) {
+    public BasicExponentFunctions(double answer) {
         this.answer = answer;
     }
     public double square (){

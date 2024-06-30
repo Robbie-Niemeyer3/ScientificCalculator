@@ -1,16 +1,8 @@
 package com.zipcodewilmington.scientific_calculator;
-import com.sun.tools.javac.Main;
-import com.zipcodewilmington.scientificcalculator.BasicFunctionsExponent;
-import com.zipcodewilmington.scientificcalculator.CoreFeature;
-import com.zipcodewilmington.scientificcalculator.MainApplication;
-import com.zipcodewilmington.scientificcalculator.ScientificFeatures;
-import org.junit.Assert;
+import com.zipcodewilmington.scientificcalculator.BasicAddSubDivMulFunctions;
+import com.zipcodewilmington.scientificcalculator.ScientificFeaturesFunctions;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.Scanner;
 
 /**
  * Created by leon on 2/9/18.
@@ -53,8 +45,8 @@ public class TestMainApplication {
 
     @Test
     public void testMultiply(){
-        CoreFeature coreFeature = new CoreFeature();
-        double results = coreFeature.multiplication(5, 5);
+        BasicAddSubDivMulFunctions basicAddSubDivMulFunctions = new BasicAddSubDivMulFunctions();
+        double results = basicAddSubDivMulFunctions.multiplication(5, 5);
         assertEquals(25.0, results, 0.001);
     }
 
@@ -123,8 +115,8 @@ public class TestMainApplication {
 
     @Test
     public void testingLog(){
-        ScientificFeatures scientificFeatures = new ScientificFeatures();
-        double results = scientificFeatures.log(2);
+        ScientificFeaturesFunctions scientificFeaturesFunctions = new ScientificFeaturesFunctions();
+        double results = scientificFeaturesFunctions.log(2);
         assertEquals(0.301, results, 0.001);
     }
 
