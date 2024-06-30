@@ -7,18 +7,23 @@ public class BasicExponentFunctions {
     public BasicExponentFunctions(double answer) {
         this.answer = answer;
     }
-    public double square (){
-        answer = answer * answer;
+    public BasicExponentFunctions(){};
+
+    public double square (double input){
+
+        answer = input * input;
         return answer;
     }
-    public double squareRoot(){
-        answer = Math.sqrt(answer);
+    public double squareRoot(double input ){
+
+        answer = Math.sqrt(input);
         return answer;
     }
 
-    public double exponentiation(double input){
-        answer = Math.pow(answer, input);
+    public double exponentiation(double input1, double input2){
+        answer = Math.pow(input1, input2);
         return answer;
+
     }
 
     public double inverse(){
