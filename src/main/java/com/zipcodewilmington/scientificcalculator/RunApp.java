@@ -15,17 +15,20 @@ public class RunApp {
         boolean exitBasicFunction = false;
         boolean exitBasicApp = false;
         Scanner scanner = new Scanner(System.in);
+        // This method is doing two main things: 1 - it is scanning the users input and prompts the calculated results to user, 2- it is calling the methods from various classes to calculate
+        // users data and shows results to user. Everytime a user is shown an answer, the answer variable above is updated to that number. Thus the answer variable to the stored memory for the calculator.
 
 
+// !exitapp exits the entire application and closes scanner.
         while(!exitApp){
 
-            // before user is given an option to choose between basic and scientific function, user has choice to start with previous answer or from 0
-            // if(answer == 0) ...
-            System.out.println("Current Value: " + answer);
 
+            System.out.println("Current Value: " + answer);
+// this is the main menu for the user to choose from:
         int option = Console.getIntegerInput("Please choose one of the following:\n1. Basic Functions\n2. Scientific Functions \n3. Refresh Current Value to 0 \n4. Close Calculator");
 
 exitMainMenu =false;
+// if user exitMainMenu is true, user returns back to main Menu.
 while(!exitMainMenu) {
     if (option == 1) {
         exitBasicFunction = false;
