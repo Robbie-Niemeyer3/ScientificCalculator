@@ -253,6 +253,15 @@ while(!exitMainMenu) {
                 }
             }
         }
+    }// USER WANTS TO REFRESH ANSWER TO 0
+    else if(option == 3){
+        answer = 0;
+        exitMainMenu = true;
+
+    } // USER WANTS TO CLOSE THE CALCULATOR
+    else if(option == 4){
+        exitMainMenu = true;
+        exitApp = true;
     }
 }
 
