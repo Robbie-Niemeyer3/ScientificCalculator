@@ -21,8 +21,9 @@ public class RunApp {
 
             // before user is given an option to choose between basic and scientific function, user has choice to start with previous answer or from 0
             // if(answer == 0) ...
-            System.out.println(answer);
-        int option = Console.getIntegerInput("Please choose one of the following:\n1. Basic Functions\n2. Scientific Functions");
+            System.out.println("Current Value: " + answer);
+
+        int option = Console.getIntegerInput("Please choose one of the following:\n1. Basic Functions\n2. Scientific Functions \n3. Refresh Current Value to 0 \n4. Close Calculator");
 
 exitMainMenu =false;
 while(!exitMainMenu) {
